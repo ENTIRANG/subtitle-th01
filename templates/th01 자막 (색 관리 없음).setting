@@ -1,0 +1,174 @@
+{
+	Tools = ordered() {
+		th01_Caption = MacroOperator {
+			Inputs = ordered() {
+				Input1 = InstanceInput {
+					SourceOp = "th_text",
+					Source = "StyledText",
+					Name = "자막",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "th_text",
+					Source = "Red1",
+					Name = "글자색",
+					ControlGroup = 2,
+					Default = 0.0689676154210332,
+				},
+				Input3 = InstanceInput {
+					SourceOp = "th_text",
+					Source = "Green1",
+					ControlGroup = 2,
+					Default = 0.0789847378269507,
+				},
+				Input4 = InstanceInput {
+					SourceOp = "th_text",
+					Source = "Blue1",
+					ControlGroup = 2,
+					Default = 0.09993118102552181,
+				},
+				Input5 = InstanceInput {
+					SourceOp = "th_xf",
+					Source = "Center",
+					Name = "위치",
+					Page = "Controls",
+				},
+				Input6 = InstanceInput {
+					SourceOp = "th_xf",
+					Source = "Size",
+					Name = "크기",
+					Default = 1,
+				},
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "th_xf",
+					Source = "Output",
+				},
+			},
+			ViewInfo = GroupInfo { Pos = { 0, 0 } },
+			Tools = ordered() {
+				th_canvas = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0,
+						},
+						TopLeftGreen = Input {
+							Value = 0,
+						},
+						TopLeftBlue = Input {
+							Value = 0,
+						},
+						TopLeftAlpha = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_text = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.5, 0.138888888888889 },
+						},
+						StyledText = Input {
+							Value = "여러분이 신청한 음악을 틀어드려요",
+						},
+						Font = Input {
+							Value = "Cafe24 Ssurround",
+						},
+						Style = Input {
+							Value = "Bold",
+						},
+						Size = Input {
+							Value = 0.055648996702227,
+						},
+						Red1 = Input {
+							Value = 0.0689676154210332,
+						},
+						Green1 = Input {
+							Value = 0.0789847378269507,
+						},
+						Blue1 = Input {
+							Value = 0.09993118102552181,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = 0,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_fit = Transform {
+					CtrlWZoom = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "th_text",
+							Source = "Output",
+						},
+						Pivot = Input {
+							Value = { 0.5, 0.138888888888889 },
+						},
+						Size = Input {
+							Value = 1,
+							Expression = "min(1,0.7385416666666663/(((th_text.Output[time].DataWindow[3]-th_text.Output[time].DataWindow[1])*1920/th_text.Output[time].Width)/1920))",
+						},
+					},
+				},
+				th_m1 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_canvas",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_fit",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_xf = Transform {
+					CtrlWZoom = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "th_m1",
+							Source = "Output",
+						},
+					},
+				},
+			},
+		},
+	},
+	ActiveTool = "th01_Caption",
+}

@@ -1,0 +1,5646 @@
+{
+	Tools = ordered() {
+		th01_FormDemo = MacroOperator {
+			Inputs = ordered() {
+				Input1 = InstanceInput {
+					SourceOp = "th_ttitle16",
+					Source = "StyledText",
+					Name = "제목 1",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "th_ttitle27",
+					Source = "StyledText",
+					Name = "제목 2",
+				},
+				Input3 = InstanceInput {
+					SourceOp = "th_tdesc8",
+					Source = "StyledText",
+					Name = "설명 1",
+				},
+				Input4 = InstanceInput {
+					SourceOp = "th_tdesc9",
+					Source = "StyledText",
+					Name = "설명 2",
+				},
+				Input5 = InstanceInput {
+					SourceOp = "th_tdesc10",
+					Source = "StyledText",
+					Name = "설명 3",
+				},
+				Input6 = InstanceInput {
+					SourceOp = "th_treq12",
+					Source = "StyledText",
+					Name = "필수 안내",
+				},
+				Input7 = InstanceInput {
+					SourceOp = "th_tqlabel14",
+					Source = "StyledText",
+					Name = "문항 1",
+				},
+				Input8 = InstanceInput {
+					SourceOp = "th_tcbtext20",
+					Source = "StyledText",
+					Name = "체크 1",
+				},
+				Input9 = InstanceInput {
+					SourceOp = "th_tqlabel22",
+					Source = "StyledText",
+					Name = "문항 2",
+				},
+				Input10 = InstanceInput {
+					SourceOp = "th_tans27",
+					Source = "StyledText",
+					Name = "답 2",
+				},
+				Input11 = InstanceInput {
+					SourceOp = "th_tqlabel29",
+					Source = "StyledText",
+					Name = "문항 3",
+				},
+				Input12 = InstanceInput {
+					SourceOp = "th_tans34",
+					Source = "StyledText",
+					Name = "답 3",
+				},
+				Input13 = InstanceInput {
+					SourceOp = "th_tqlabel36",
+					Source = "StyledText",
+					Name = "문항 4",
+				},
+				Input14 = InstanceInput {
+					SourceOp = "th_tcbtext42",
+					Source = "StyledText",
+					Name = "체크 4",
+				},
+				Input15 = InstanceInput {
+					SourceOp = "th_tsubmit45",
+					Source = "StyledText",
+					Name = "버튼",
+				},
+				Input16 = InstanceInput {
+					SourceOp = "th_tclear46",
+					Source = "StyledText",
+					Name = "지우기",
+				},
+				Input17 = InstanceInput {
+					SourceOp = "th_tdmsg57",
+					Source = "StyledText",
+					Name = "완료 문구",
+				},
+				Input18 = InstanceInput {
+					SourceOp = "th_tdlink59",
+					Source = "StyledText",
+					Name = "완료 링크",
+				},
+				Input19 = InstanceInput {
+					SourceOp = "th_tclock62",
+					Source = "StyledText",
+					Name = "시계",
+				},
+				Input20 = InstanceInput {
+					SourceOp = "th_taph25",
+					Source = "StyledText",
+					Name = "빈칸 1",
+				},
+				Input21 = InstanceInput {
+					SourceOp = "th_taph32",
+					Source = "StyledText",
+					Name = "빈칸 2",
+				},
+				Input22 = InstanceInput {
+					SourceOp = "th_r1",
+					Source = "StyledText",
+					Name = "안내 1",
+				},
+				Input23 = InstanceInput {
+					SourceOp = "th_r2",
+					Source = "StyledText",
+					Name = "안내 2",
+				},
+				Input24 = InstanceInput {
+					SourceOp = "th_r3",
+					Source = "StyledText",
+					Name = "안내 3",
+				},
+				Input25 = InstanceInput {
+					SourceOp = "th_r4",
+					Source = "StyledText",
+					Name = "안내 4",
+				},
+				Input26 = InstanceInput {
+					SourceOp = "th_rcname",
+					Source = "StyledText",
+					Name = "이름 알약",
+				},
+				Input27 = InstanceInput {
+					SourceOp = "th_rcicon",
+					Source = "StyledText",
+					Name = "아이콘",
+				},
+				Input28 = InstanceInput {
+					SourceOp = "th_rcaffil",
+					Source = "StyledText",
+					Name = "소속 알약",
+				},
+				Input29 = InstanceInput {
+					SourceOp = "th_color",
+					Source = "TopLeftRed",
+					Name = "색",
+					ControlGroup = 1,
+					Default = 0.847826086956522,
+				},
+				Input30 = InstanceInput {
+					SourceOp = "th_color",
+					Source = "TopLeftGreen",
+					ControlGroup = 1,
+					Default = 0.136231884057971,
+				},
+				Input31 = InstanceInput {
+					SourceOp = "th_color",
+					Source = "TopLeftBlue",
+					ControlGroup = 1,
+					Default = 0.00372334389287526,
+				},
+				Input32 = InstanceInput {
+					SourceOp = "th_m1",
+					Source = "Blend",
+					Name = "벽",
+					Default = 1,
+				},
+				Input33 = InstanceInput {
+					SourceOp = "th_ctl",
+					Source = "FadeIn",
+					Name = "내용 페이드 인(프레임)",
+				},
+				Input34 = InstanceInput {
+					SourceOp = "th_ctl",
+					Source = "FadeOut",
+					Name = "내용 페이드 아웃(프레임)",
+				},
+				Input35 = InstanceInput {
+					SourceOp = "th_xf",
+					Source = "Center",
+					Name = "위치",
+					Page = "Controls",
+				},
+				Input36 = InstanceInput {
+					SourceOp = "th_xf",
+					Source = "Size",
+					Name = "크기",
+					Default = 1,
+				},
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "th_xf",
+					Source = "Output",
+				},
+			},
+			ViewInfo = GroupInfo { Pos = { 0, 0 } },
+			Tools = ordered() {
+				th_color = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0.847826086956522,
+						},
+						TopLeftGreen = Input {
+							Value = 0.136231884057971,
+						},
+						TopLeftBlue = Input {
+							Value = 0.00372334389287526,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+					},
+				},
+				th_ctl = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0,
+						},
+						TopLeftGreen = Input {
+							Value = 0,
+						},
+						TopLeftBlue = Input {
+							Value = 0,
+						},
+						TopLeftAlpha = Input {
+							Value = 0,
+						},
+						FadeIn = Input {
+							Value = 6,
+						},
+						FadeOut = Input {
+							Value = 6,
+						},
+					},
+					UserControls = ordered() {
+					FadeIn = {
+						LINKS_Name = "Fade In",
+						LINKID_DataType = "Number",
+						INPID_InputControl = "SliderControl",
+						INP_Default = 6,
+						INP_MinScale = 0,
+						INP_MaxScale = 60,
+						INP_Integer = true,
+						ICS_ControlPage = "Controls",
+					},
+					FadeOut = {
+						LINKS_Name = "Fade Out",
+						LINKID_DataType = "Number",
+						INPID_InputControl = "SliderControl",
+						INP_Default = 6,
+						INP_MinScale = 0,
+						INP_MaxScale = 60,
+						INP_Integer = true,
+						ICS_ControlPage = "Controls",
+					},
+				},
+				},
+				th_canvas = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0,
+						},
+						TopLeftGreen = Input {
+							Value = 0,
+						},
+						TopLeftBlue = Input {
+							Value = 0,
+						},
+						TopLeftAlpha = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_wall = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Type = Input {
+							Value = FuID { "Vertical" },
+						},
+						TopLeftRed = Input {
+							Value = 0.7844708104519962,
+						},
+						TopLeftGreen = Input {
+							Value = 0.8267105646045346,
+						},
+						TopLeftBlue = Input {
+							Value = 0.763807006694501,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						TopRightRed = Input {
+							Value = 0.7844708104519962,
+						},
+						TopRightGreen = Input {
+							Value = 0.8267105646045346,
+						},
+						TopRightBlue = Input {
+							Value = 0.763807006694501,
+						},
+						TopRightAlpha = Input {
+							Value = 1,
+						},
+						BottomLeftRed = Input {
+							Value = 0.6399378181331963,
+						},
+						BottomLeftGreen = Input {
+							Value = 0.6713685838252088,
+						},
+						BottomLeftBlue = Input {
+							Value = 0.6153887114059929,
+						},
+						BottomLeftAlpha = Input {
+							Value = 1,
+						},
+						BottomRightRed = Input {
+							Value = 0.6399378181331963,
+						},
+						BottomRightGreen = Input {
+							Value = 0.6713685838252088,
+						},
+						BottomRightBlue = Input {
+							Value = 0.6153887114059929,
+						},
+						BottomRightAlpha = Input {
+							Value = 1,
+						},
+					},
+				},
+				th_m1 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_canvas",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_wall",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Blend = Input {
+							Value = 1,
+						},
+					},
+				},
+				th_canvas_c = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0,
+						},
+						TopLeftGreen = Input {
+							Value = 0,
+						},
+						TopLeftBlue = Input {
+							Value = 0,
+						},
+						TopLeftAlpha = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Rshadow1 = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.25677083333333334, 0.48888888888888893 },
+						},
+						Width = Input {
+							Value = 0.23958333333333334,
+						},
+						Height = Input {
+							Value = 0.8888888888888888,
+						},
+						CornerRadius = Input {
+							Value = 0.28695652173913044,
+						},
+					},
+				},
+				th_shadow1 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0.5280068577691625,
+						},
+						TopLeftGreen = Input {
+							Value = 0.5620772449236313,
+						},
+						TopLeftBlue = Input {
+							Value = 0.505942584940691,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rshadow1",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m101 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_canvas_c",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_shadow1",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Rphone2 = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.2526041666666667, 0.5 },
+						},
+						Width = Input {
+							Value = 0.23958333333333334,
+						},
+						Height = Input {
+							Value = 0.8888888888888888,
+						},
+						CornerRadius = Input {
+							Value = 0.2782608695652174,
+						},
+					},
+				},
+				th_phone2 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0.02392787519457255,
+						},
+						TopLeftGreen = Input {
+							Value = 0.02392787519457255,
+						},
+						TopLeftBlue = Input {
+							Value = 0.026011155533165905,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rphone2",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m102 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m101",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_phone2",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Rscreen3 = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.2526041666666667, 0.5 },
+						},
+						Width = Input {
+							Value = 0.22291666666666668,
+						},
+						Height = Input {
+							Value = 0.8592592592592593,
+						},
+						CornerRadius = Input {
+							Value = 0.22429906542056074,
+						},
+					},
+				},
+				th_screen3 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 1.0000000000000004,
+						},
+						TopLeftGreen = Input {
+							Value = 0.8849314483594064,
+						},
+						TopLeftBlue = Input {
+							Value = 0.7233874963833161,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rscreen3",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m103 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m102",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_screen3",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Rtcard4 = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.2526041666666667, 0.775 },
+						},
+						Width = Input {
+							Value = 0.21041666666666667,
+						},
+						Height = Input {
+							Value = 0.20555555555555555,
+						},
+						CornerRadius = Input {
+							Value = 0.09009009009009009,
+						},
+					},
+				},
+				th_tcard4 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 1,
+						},
+						TopLeftGreen = Input {
+							Value = 1,
+						},
+						TopLeftBlue = Input {
+							Value = 1,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rtcard4",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m104 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m103",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_tcard4",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Rttop5 = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.2526041666666667, 0.8731481481481481 },
+						},
+						Width = Input {
+							Value = 0.21041666666666667,
+						},
+						Height = Input {
+							Value = 0.009259259259259259,
+						},
+						CornerRadius = Input {
+							Value = 1,
+						},
+					},
+				},
+				th_ttop5 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 1.0000000000000004,
+						},
+						TopLeftGreen = Input {
+							Value = 0.36129174965822725,
+						},
+						TopLeftBlue = Input {
+							Value = 0,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rttop5",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m105 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m104",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_ttop5",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_ttitle16 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.1578125, 0.8351851851851853 },
+						},
+						StyledText = Input {
+							Value = "2026 남성중학교 방송부",
+						},
+						Font = Input {
+							Value = "Pretendard",
+						},
+						Style = Input {
+							Value = "Regular",
+						},
+						Size = Input {
+							Value = 0.02109375,
+						},
+						Red1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Green1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Blue1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = -1,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m106 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m105",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_ttitle16",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_ttitle27 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.1578125, 0.8018518518518518 },
+						},
+						StyledText = Input {
+							Value = "신청곡 신청",
+						},
+						Font = Input {
+							Value = "Pretendard",
+						},
+						Style = Input {
+							Value = "Regular",
+						},
+						Size = Input {
+							Value = 0.02109375,
+						},
+						Red1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Green1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Blue1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = -1,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m107 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m106",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_ttitle27",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_tdesc8 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.1578125, 0.7685185185185185 },
+						},
+						StyledText = Input {
+							Value = "부적절한 신청곡은 거부될 수 있으며, 불이익을 받을 수",
+						},
+						Font = Input {
+							Value = "Pretendard",
+						},
+						Style = Input {
+							Value = "Regular",
+						},
+						Size = Input {
+							Value = 0.010546875,
+						},
+						Red1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Green1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Blue1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = -1,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m108 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m107",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_tdesc8",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_tdesc9 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.1578125, 0.75 },
+						},
+						StyledText = Input {
+							Value = "있습니다. 안전한 방송을 위해 이메일 및 학번, 이름을",
+						},
+						Font = Input {
+							Value = "Pretendard",
+						},
+						Style = Input {
+							Value = "Regular",
+						},
+						Size = Input {
+							Value = 0.010546875,
+						},
+						Red1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Green1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Blue1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = -1,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m109 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m108",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_tdesc9",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_tdesc10 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.1578125, 0.7314814814814814 },
+						},
+						StyledText = Input {
+							Value = "수집하며, 해당 정보는 방송부 내부에서만 처리됩니다.",
+						},
+						Font = Input {
+							Value = "Pretendard",
+						},
+						Style = Input {
+							Value = "Regular",
+						},
+						Size = Input {
+							Value = 0.010546875,
+						},
+						Red1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Green1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Blue1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = -1,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m110 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m109",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_tdesc10",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Rrule11 = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.2526041666666667, 0.7092592592592593 },
+						},
+						Width = Input {
+							Value = 0.21041666666666667,
+						},
+						Height = Input {
+							Value = 0.000925925925925926,
+						},
+						CornerRadius = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_rule11 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0.730040200533103,
+						},
+						TopLeftGreen = Input {
+							Value = 0.7434461745059345,
+						},
+						TopLeftBlue = Input {
+							Value = 0.7706612376240604,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rrule11",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m111 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m110",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_rule11",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_treq12 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.1578125, 0.6898148148148149 },
+						},
+						StyledText = Input {
+							Value = "* 표시는 필수 질문임",
+						},
+						Font = Input {
+							Value = "Pretendard",
+						},
+						Style = Input {
+							Value = "Regular",
+						},
+						Size = Input {
+							Value = 0.0109375,
+						},
+						Red1 = Input {
+							Value = 0.7233874963833161,
+						},
+						Green1 = Input {
+							Value = 0.05069650535536964,
+						},
+						Blue1 = Input {
+							Value = 0.03531228120347072,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = -1,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m112 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m111",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_treq12",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Rqcard13 = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.2526041666666667, 0.6092592592592593 },
+						},
+						Width = Input {
+							Value = 0.21041666666666667,
+						},
+						Height = Input {
+							Value = 0.1037037037037037,
+						},
+						CornerRadius = Input {
+							Value = 0.17857142857142858,
+						},
+					},
+				},
+				th_qcard13 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 1,
+						},
+						TopLeftGreen = Input {
+							Value = 1,
+						},
+						TopLeftBlue = Input {
+							Value = 1,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rqcard13",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m113 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m112",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_qcard13",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_tqlabel14 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.1578125, 0.6287037037037038 },
+						},
+						StyledText = Input {
+							Value = "이메일 *",
+						},
+						Font = Input {
+							Value = "Pretendard",
+						},
+						Style = Input {
+							Value = "Medium",
+						},
+						Size = Input {
+							Value = 0.015234375,
+						},
+						Red1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Green1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Blue1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = -1,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m114 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m113",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_tqlabel14",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Rcbb15 = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.1640625, 0.5888888888888889 },
+						},
+						Width = Input {
+							Value = 0.0125,
+						},
+						Height = Input {
+							Value = 0.022222222222222223,
+						},
+						CornerRadius = Input {
+							Value = 0.25,
+						},
+					},
+				},
+				th_cbb15 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0.15254505000863777,
+						},
+						TopLeftGreen = Input {
+							Value = 0.1640514622195971,
+						},
+						TopLeftBlue = Input {
+							Value = 0.17908429712193463,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rcbb15",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m115 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m114",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_cbb15",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Rcbh16 = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.1640625, 0.5888888888888889 },
+						},
+						Width = Input {
+							Value = 0.010416666666666666,
+						},
+						Height = Input {
+							Value = 0.018518518518518517,
+						},
+						CornerRadius = Input {
+							Value = 0.2,
+						},
+					},
+				},
+				th_cbh16 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 1,
+						},
+						TopLeftGreen = Input {
+							Value = 1,
+						},
+						TopLeftBlue = Input {
+							Value = 1,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rcbh16",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m116 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m115",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_cbh16",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Rcbon17 = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.1640625, 0.5888888888888889 },
+						},
+						Width = Input {
+							Value = 0.0125,
+						},
+						Height = Input {
+							Value = 0.022222222222222223,
+						},
+						CornerRadius = Input {
+							Value = 0.25,
+						},
+					},
+				},
+				th_cbon17 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0.7706612376240604,
+						},
+						TopLeftGreen = Input {
+							Value = 0.08877029386843624,
+						},
+						TopLeftBlue = Input {
+							Value = 0,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rcbon17",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m117 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m116",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_cbon17",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Blend = Input {
+							SourceOp = "th_Scbon17",
+							Source = "Value",
+						},
+					},
+				},
+				th_Scbon17 = BezierSpline {
+					CtrlWZoom = false,
+					Inputs = { },
+					KeyFrames = {
+						[0] = { 0, Flags = { Linear = true } },
+						[15] = { 0, Flags = { Linear = true } },
+						[18] = { 1, Flags = { Linear = true } },
+					},
+				},
+				th_ttick18 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.1640625, 0.587962962962963 },
+						},
+						StyledText = Input {
+							Value = "✓",
+						},
+						Font = Input {
+							Value = "Segoe UI Symbol",
+						},
+						Style = Input {
+							Value = "Regular",
+						},
+						Size = Input {
+							Value = 0.01640625,
+						},
+						Red1 = Input {
+							Value = 1,
+						},
+						Green1 = Input {
+							Value = 1,
+						},
+						Blue1 = Input {
+							Value = 1,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = 0,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m118 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m117",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_ttick18",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Blend = Input {
+							SourceOp = "th_Sagain19",
+							Source = "Value",
+						},
+					},
+				},
+				th_Sagain19 = BezierSpline {
+					CtrlWZoom = false,
+					Inputs = { },
+					KeyFrames = {
+						[0] = { 0, Flags = { Linear = true } },
+						[15] = { 0, Flags = { Linear = true } },
+						[18] = { 1, Flags = { Linear = true } },
+					},
+				},
+				th_tcbtext20 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.17760416666666667, 0.5888888888888889 },
+						},
+						StyledText = Input {
+							Value = "응답과 함께 이메일 주소 기록",
+						},
+						Font = Input {
+							Value = "Pretendard",
+						},
+						Style = Input {
+							Value = "Regular",
+						},
+						Size = Input {
+							Value = 0.0140625,
+						},
+						Red1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Green1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Blue1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = -1,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m119 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m118",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_tcbtext20",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Rqcard21 = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.2526041666666667, 0.48888888888888893 },
+						},
+						Width = Input {
+							Value = 0.21041666666666667,
+						},
+						Height = Input {
+							Value = 0.11481481481481481,
+						},
+						CornerRadius = Input {
+							Value = 0.16129032258064516,
+						},
+					},
+				},
+				th_qcard21 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 1,
+						},
+						TopLeftGreen = Input {
+							Value = 1,
+						},
+						TopLeftBlue = Input {
+							Value = 1,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rqcard21",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m120 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m119",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_qcard21",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_tqlabel22 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.1578125, 0.5138888888888888 },
+						},
+						StyledText = Input {
+							Value = "신청곡 *",
+						},
+						Font = Input {
+							Value = "Pretendard",
+						},
+						Style = Input {
+							Value = "Medium",
+						},
+						Size = Input {
+							Value = 0.015234375,
+						},
+						Red1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Green1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Blue1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = -1,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m121 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m120",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_tqlabel22",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Raline23 = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.24114583333333334, 0.4537037037037037 },
+						},
+						Width = Input {
+							Value = 0.16666666666666666,
+						},
+						Height = Input {
+							Value = 0.001388888888888889,
+						},
+						CornerRadius = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_aline23 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0.730040200533103,
+						},
+						TopLeftGreen = Input {
+							Value = 0.7434461745059345,
+						},
+						TopLeftBlue = Input {
+							Value = 0.7706612376240604,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Raline23",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m122 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m121",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_aline23",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Rafocus24 = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.24114583333333334, 0.4537037037037037 },
+						},
+						Width = Input {
+							Value = 0.16666666666666666,
+						},
+						Height = Input {
+							Value = 0.002777777777777778,
+						},
+						CornerRadius = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_afocus24 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0.7706612376240604,
+						},
+						TopLeftGreen = Input {
+							Value = 0.08877029386843624,
+						},
+						TopLeftBlue = Input {
+							Value = 0,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rafocus24",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m123 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m122",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_afocus24",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Blend = Input {
+							SourceOp = "th_Safocus24",
+							Source = "Value",
+						},
+					},
+				},
+				th_Safocus24 = BezierSpline {
+					CtrlWZoom = false,
+					Inputs = { },
+					KeyFrames = {
+						[0] = { 0, Flags = { Linear = true } },
+						[31] = { 0, Flags = { Linear = true } },
+						[34] = { 1, Flags = { Linear = true } },
+						[83] = { 1, Flags = { Linear = true } },
+						[86] = { 0, Flags = { Linear = true } },
+					},
+				},
+				th_taph25 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.1578125, 0.46944444444444444 },
+						},
+						StyledText = Input {
+							Value = "내 답변",
+						},
+						Font = Input {
+							Value = "Pretendard",
+						},
+						Style = Input {
+							Value = "Regular",
+						},
+						Size = Input {
+							Value = 0.0140625,
+						},
+						Red1 = Input {
+							Value = 0.37041371641498266,
+						},
+						Green1 = Input {
+							Value = 0.3985323719276792,
+						},
+						Blue1 = Input {
+							Value = 0.427786572086244,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = -1,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m124 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m123",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_taph25",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Blend = Input {
+							SourceOp = "th_Sagain26",
+							Source = "Value",
+						},
+					},
+				},
+				th_Sagain26 = BezierSpline {
+					CtrlWZoom = false,
+					Inputs = { },
+					KeyFrames = {
+						[0] = { 1, Flags = { Linear = true } },
+						[33] = { 1, Flags = { Linear = true } },
+						[34] = { 0, Flags = { Linear = true } },
+					},
+				},
+				th_tans27 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.1578125, 0.46944444444444444 },
+						},
+						StyledText = Input {
+							Value = "노는게 제일 좋아 - 뽀로로",
+						},
+						Font = Input {
+							Value = "Pretendard",
+						},
+						Style = Input {
+							Value = "Regular",
+						},
+						Size = Input {
+							Value = 0.015234375,
+						},
+						Red1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Green1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Blue1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = -1,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+						End = Input {
+							SourceOp = "th_Wans27",
+							Source = "Value",
+						},
+					},
+				},
+				th_Wans27 = BezierSpline {
+					CtrlWZoom = false,
+					Inputs = { },
+					KeyFrames = {
+						[0] = { 0, Flags = { Linear = true } },
+						[34] = { 0, Flags = { Linear = true } },
+						[76] = { 1, Flags = { Linear = true } },
+					},
+				},
+				th_m125 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m124",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_tans27",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Rqcard28 = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.2526041666666667, 0.36296296296296293 },
+						},
+						Width = Input {
+							Value = 0.21041666666666667,
+						},
+						Height = Input {
+							Value = 0.11481481481481481,
+						},
+						CornerRadius = Input {
+							Value = 0.16129032258064516,
+						},
+					},
+				},
+				th_qcard28 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 1,
+						},
+						TopLeftGreen = Input {
+							Value = 1,
+						},
+						TopLeftBlue = Input {
+							Value = 1,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rqcard28",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m126 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m125",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_qcard28",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_tqlabel29 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.1578125, 0.38796296296296295 },
+						},
+						StyledText = Input {
+							Value = "학번이름(예 : 10101 홍길동) *",
+						},
+						Font = Input {
+							Value = "Pretendard",
+						},
+						Style = Input {
+							Value = "Medium",
+						},
+						Size = Input {
+							Value = 0.015234375,
+						},
+						Red1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Green1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Blue1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = -1,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m127 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m126",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_tqlabel29",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Raline30 = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.24114583333333334, 0.3277777777777777 },
+						},
+						Width = Input {
+							Value = 0.16666666666666666,
+						},
+						Height = Input {
+							Value = 0.001388888888888889,
+						},
+						CornerRadius = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_aline30 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0.730040200533103,
+						},
+						TopLeftGreen = Input {
+							Value = 0.7434461745059345,
+						},
+						TopLeftBlue = Input {
+							Value = 0.7706612376240604,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Raline30",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m128 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m127",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_aline30",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Rafocus31 = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.24114583333333334, 0.3277777777777777 },
+						},
+						Width = Input {
+							Value = 0.16666666666666666,
+						},
+						Height = Input {
+							Value = 0.002777777777777778,
+						},
+						CornerRadius = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_afocus31 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0.7706612376240604,
+						},
+						TopLeftGreen = Input {
+							Value = 0.08877029386843624,
+						},
+						TopLeftBlue = Input {
+							Value = 0,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rafocus31",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m129 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m128",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_afocus31",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Blend = Input {
+							SourceOp = "th_Safocus31",
+							Source = "Value",
+						},
+					},
+				},
+				th_Safocus31 = BezierSpline {
+					CtrlWZoom = false,
+					Inputs = { },
+					KeyFrames = {
+						[0] = { 0, Flags = { Linear = true } },
+						[83] = { 0, Flags = { Linear = true } },
+						[86] = { 1, Flags = { Linear = true } },
+						[129] = { 1, Flags = { Linear = true } },
+						[132] = { 0, Flags = { Linear = true } },
+					},
+				},
+				th_taph32 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.1578125, 0.34351851851851856 },
+						},
+						StyledText = Input {
+							Value = "내 답변",
+						},
+						Font = Input {
+							Value = "Pretendard",
+						},
+						Style = Input {
+							Value = "Regular",
+						},
+						Size = Input {
+							Value = 0.0140625,
+						},
+						Red1 = Input {
+							Value = 0.37041371641498266,
+						},
+						Green1 = Input {
+							Value = 0.3985323719276792,
+						},
+						Blue1 = Input {
+							Value = 0.427786572086244,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = -1,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m130 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m129",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_taph32",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Blend = Input {
+							SourceOp = "th_Sagain33",
+							Source = "Value",
+						},
+					},
+				},
+				th_Sagain33 = BezierSpline {
+					CtrlWZoom = false,
+					Inputs = { },
+					KeyFrames = {
+						[0] = { 1, Flags = { Linear = true } },
+						[85] = { 1, Flags = { Linear = true } },
+						[86] = { 0, Flags = { Linear = true } },
+					},
+				},
+				th_tans34 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.1578125, 0.34351851851851856 },
+						},
+						StyledText = Input {
+							Value = "10101 김방송",
+						},
+						Font = Input {
+							Value = "Pretendard",
+						},
+						Style = Input {
+							Value = "Regular",
+						},
+						Size = Input {
+							Value = 0.015234375,
+						},
+						Red1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Green1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Blue1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = -1,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+						End = Input {
+							SourceOp = "th_Wans34",
+							Source = "Value",
+						},
+					},
+				},
+				th_Wans34 = BezierSpline {
+					CtrlWZoom = false,
+					Inputs = { },
+					KeyFrames = {
+						[0] = { 0, Flags = { Linear = true } },
+						[86] = { 0, Flags = { Linear = true } },
+						[116] = { 1, Flags = { Linear = true } },
+					},
+				},
+				th_m131 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m130",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_tans34",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Rqcard35 = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.2526041666666667, 0.24259259259259258 },
+						},
+						Width = Input {
+							Value = 0.21041666666666667,
+						},
+						Height = Input {
+							Value = 0.1037037037037037,
+						},
+						CornerRadius = Input {
+							Value = 0.17857142857142858,
+						},
+					},
+				},
+				th_qcard35 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 1,
+						},
+						TopLeftGreen = Input {
+							Value = 1,
+						},
+						TopLeftBlue = Input {
+							Value = 1,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rqcard35",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m132 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m131",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_qcard35",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_tqlabel36 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.1578125, 0.26203703703703707 },
+						},
+						StyledText = Input {
+							Value = "익명으로 해드릴까요?",
+						},
+						Font = Input {
+							Value = "Pretendard",
+						},
+						Style = Input {
+							Value = "Medium",
+						},
+						Size = Input {
+							Value = 0.015234375,
+						},
+						Red1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Green1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Blue1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = -1,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m133 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m132",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_tqlabel36",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Rcbb37 = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.1640625, 0.2222222222222222 },
+						},
+						Width = Input {
+							Value = 0.0125,
+						},
+						Height = Input {
+							Value = 0.022222222222222223,
+						},
+						CornerRadius = Input {
+							Value = 0.25,
+						},
+					},
+				},
+				th_cbb37 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0.15254505000863777,
+						},
+						TopLeftGreen = Input {
+							Value = 0.1640514622195971,
+						},
+						TopLeftBlue = Input {
+							Value = 0.17908429712193463,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rcbb37",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m134 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m133",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_cbb37",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Rcbh38 = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.1640625, 0.2222222222222222 },
+						},
+						Width = Input {
+							Value = 0.010416666666666666,
+						},
+						Height = Input {
+							Value = 0.018518518518518517,
+						},
+						CornerRadius = Input {
+							Value = 0.2,
+						},
+					},
+				},
+				th_cbh38 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 1,
+						},
+						TopLeftGreen = Input {
+							Value = 1,
+						},
+						TopLeftBlue = Input {
+							Value = 1,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rcbh38",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m135 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m134",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_cbh38",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Rcbon39 = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.1640625, 0.2222222222222222 },
+						},
+						Width = Input {
+							Value = 0.0125,
+						},
+						Height = Input {
+							Value = 0.022222222222222223,
+						},
+						CornerRadius = Input {
+							Value = 0.25,
+						},
+					},
+				},
+				th_cbon39 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0.7706612376240604,
+						},
+						TopLeftGreen = Input {
+							Value = 0.08877029386843624,
+						},
+						TopLeftBlue = Input {
+							Value = 0,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rcbon39",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m136 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m135",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_cbon39",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Blend = Input {
+							SourceOp = "th_Scbon39",
+							Source = "Value",
+						},
+					},
+				},
+				th_Scbon39 = BezierSpline {
+					CtrlWZoom = false,
+					Inputs = { },
+					KeyFrames = {
+						[0] = { 0, Flags = { Linear = true } },
+						[129] = { 0, Flags = { Linear = true } },
+						[132] = { 1, Flags = { Linear = true } },
+					},
+				},
+				th_ttick40 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.1640625, 0.22129629629629632 },
+						},
+						StyledText = Input {
+							Value = "✓",
+						},
+						Font = Input {
+							Value = "Segoe UI Symbol",
+						},
+						Style = Input {
+							Value = "Regular",
+						},
+						Size = Input {
+							Value = 0.01640625,
+						},
+						Red1 = Input {
+							Value = 1,
+						},
+						Green1 = Input {
+							Value = 1,
+						},
+						Blue1 = Input {
+							Value = 1,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = 0,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m137 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m136",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_ttick40",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Blend = Input {
+							SourceOp = "th_Sagain41",
+							Source = "Value",
+						},
+					},
+				},
+				th_Sagain41 = BezierSpline {
+					CtrlWZoom = false,
+					Inputs = { },
+					KeyFrames = {
+						[0] = { 0, Flags = { Linear = true } },
+						[129] = { 0, Flags = { Linear = true } },
+						[132] = { 1, Flags = { Linear = true } },
+					},
+				},
+				th_tcbtext42 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.17760416666666667, 0.2222222222222222 },
+						},
+						StyledText = Input {
+							Value = "익명으로 해주세요",
+						},
+						Font = Input {
+							Value = "Pretendard",
+						},
+						Style = Input {
+							Value = "Regular",
+						},
+						Size = Input {
+							Value = 0.0140625,
+						},
+						Red1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Green1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Blue1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = -1,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m138 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m137",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_tcbtext42",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Rsubmit43 = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.18072916666666666, 0.15555555555555556 },
+						},
+						Width = Input {
+							Value = 0.04583333333333333,
+						},
+						Height = Input {
+							Value = 0.03888888888888889,
+						},
+						CornerRadius = Input {
+							Value = 0.23809523809523808,
+						},
+					},
+				},
+				th_submit43 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0.7706612376240604,
+						},
+						TopLeftGreen = Input {
+							Value = 0.08877029386843624,
+						},
+						TopLeftBlue = Input {
+							Value = 0,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rsubmit43",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m139 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m138",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_submit43",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Rpress44 = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.18072916666666666, 0.15555555555555556 },
+						},
+						Width = Input {
+							Value = 0.04583333333333333,
+						},
+						Height = Input {
+							Value = 0.03888888888888889,
+						},
+						CornerRadius = Input {
+							Value = 0.23809523809523808,
+						},
+					},
+				},
+				th_press44 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0,
+						},
+						TopLeftGreen = Input {
+							Value = 0,
+						},
+						TopLeftBlue = Input {
+							Value = 0,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rpress44",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m140 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m139",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_press44",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Blend = Input {
+							SourceOp = "th_Spress44",
+							Source = "Value",
+						},
+					},
+				},
+				th_Spress44 = BezierSpline {
+					CtrlWZoom = false,
+					Inputs = { },
+					KeyFrames = {
+						[0] = { 0, Flags = { Linear = true } },
+						[149] = { 0, Flags = { Linear = true } },
+						[150] = { 0.22, Flags = { Linear = true } },
+						[156] = { 0, Flags = { Linear = true } },
+					},
+				},
+				th_tsubmit45 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.18072916666666666, 0.15555555555555556 },
+						},
+						StyledText = Input {
+							Value = "제출",
+						},
+						Font = Input {
+							Value = "Pretendard",
+						},
+						Style = Input {
+							Value = "Medium",
+						},
+						Size = Input {
+							Value = 0.014453125,
+						},
+						Red1 = Input {
+							Value = 1,
+						},
+						Green1 = Input {
+							Value = 1,
+						},
+						Blue1 = Input {
+							Value = 1,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = 0,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m141 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m140",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_tsubmit45",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_tclear46 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.34739583333333335, 0.15555555555555556 },
+						},
+						StyledText = Input {
+							Value = "양식 지우기",
+						},
+						Font = Input {
+							Value = "Pretendard",
+						},
+						Style = Input {
+							Value = "Medium",
+						},
+						Size = Input {
+							Value = 0.01328125,
+						},
+						Red1 = Input {
+							Value = 0.7706612376240604,
+						},
+						Green1 = Input {
+							Value = 0.08877029386843624,
+						},
+						Blue1 = Input {
+							Value = 0,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = 1,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m142 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m141",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_tclear46",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Etap47 = EllipseMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.1640625, 0.5888888888888889 },
+						},
+						Width = Input {
+							Value = 0.028125,
+						},
+						Height = Input {
+							Value = 0.028125,
+						},
+					},
+				},
+				th_tap47 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0.022921999521798665,
+						},
+						TopLeftGreen = Input {
+							Value = 0.022921999521798665,
+						},
+						TopLeftBlue = Input {
+							Value = 0.022921999521798665,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Etap47",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m143 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m142",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_tap47",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Blend = Input {
+							SourceOp = "th_Stap47",
+							Source = "Value",
+						},
+					},
+				},
+				th_Stap47 = BezierSpline {
+					CtrlWZoom = false,
+					Inputs = { },
+					KeyFrames = {
+						[0] = { 0, Flags = { Linear = true } },
+						[14] = { 0, Flags = { Linear = true } },
+						[16] = { 0.28, Flags = { Linear = true } },
+						[24] = { 0, Flags = { Linear = true } },
+					},
+				},
+				th_Etap48 = EllipseMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.24114583333333334, 0.46944444444444444 },
+						},
+						Width = Input {
+							Value = 0.028125,
+						},
+						Height = Input {
+							Value = 0.028125,
+						},
+					},
+				},
+				th_tap48 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0.022921999521798665,
+						},
+						TopLeftGreen = Input {
+							Value = 0.022921999521798665,
+						},
+						TopLeftBlue = Input {
+							Value = 0.022921999521798665,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Etap48",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m144 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m143",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_tap48",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Blend = Input {
+							SourceOp = "th_Stap48",
+							Source = "Value",
+						},
+					},
+				},
+				th_Stap48 = BezierSpline {
+					CtrlWZoom = false,
+					Inputs = { },
+					KeyFrames = {
+						[0] = { 0, Flags = { Linear = true } },
+						[29] = { 0, Flags = { Linear = true } },
+						[31] = { 0.28, Flags = { Linear = true } },
+						[39] = { 0, Flags = { Linear = true } },
+					},
+				},
+				th_Etap49 = EllipseMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.24114583333333334, 0.34351851851851856 },
+						},
+						Width = Input {
+							Value = 0.028125,
+						},
+						Height = Input {
+							Value = 0.028125,
+						},
+					},
+				},
+				th_tap49 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0.022921999521798665,
+						},
+						TopLeftGreen = Input {
+							Value = 0.022921999521798665,
+						},
+						TopLeftBlue = Input {
+							Value = 0.022921999521798665,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Etap49",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m145 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m144",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_tap49",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Blend = Input {
+							SourceOp = "th_Stap49",
+							Source = "Value",
+						},
+					},
+				},
+				th_Stap49 = BezierSpline {
+					CtrlWZoom = false,
+					Inputs = { },
+					KeyFrames = {
+						[0] = { 0, Flags = { Linear = true } },
+						[81] = { 0, Flags = { Linear = true } },
+						[83] = { 0.28, Flags = { Linear = true } },
+						[91] = { 0, Flags = { Linear = true } },
+					},
+				},
+				th_Etap50 = EllipseMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.1640625, 0.2222222222222222 },
+						},
+						Width = Input {
+							Value = 0.028125,
+						},
+						Height = Input {
+							Value = 0.028125,
+						},
+					},
+				},
+				th_tap50 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0.022921999521798665,
+						},
+						TopLeftGreen = Input {
+							Value = 0.022921999521798665,
+						},
+						TopLeftBlue = Input {
+							Value = 0.022921999521798665,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Etap50",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m146 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m145",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_tap50",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Blend = Input {
+							SourceOp = "th_Stap50",
+							Source = "Value",
+						},
+					},
+				},
+				th_Stap50 = BezierSpline {
+					CtrlWZoom = false,
+					Inputs = { },
+					KeyFrames = {
+						[0] = { 0, Flags = { Linear = true } },
+						[128] = { 0, Flags = { Linear = true } },
+						[130] = { 0.28, Flags = { Linear = true } },
+						[138] = { 0, Flags = { Linear = true } },
+					},
+				},
+				th_Etap51 = EllipseMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.18072916666666666, 0.15555555555555556 },
+						},
+						Width = Input {
+							Value = 0.028125,
+						},
+						Height = Input {
+							Value = 0.028125,
+						},
+					},
+				},
+				th_tap51 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0.022921999521798665,
+						},
+						TopLeftGreen = Input {
+							Value = 0.022921999521798665,
+						},
+						TopLeftBlue = Input {
+							Value = 0.022921999521798665,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Etap51",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m147 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m146",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_tap51",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Blend = Input {
+							SourceOp = "th_Stap51",
+							Source = "Value",
+						},
+					},
+				},
+				th_Stap51 = BezierSpline {
+					CtrlWZoom = false,
+					Inputs = { },
+					KeyFrames = {
+						[0] = { 0, Flags = { Linear = true } },
+						[146] = { 0, Flags = { Linear = true } },
+						[148] = { 0.28, Flags = { Linear = true } },
+						[156] = { 0, Flags = { Linear = true } },
+					},
+				},
+				th_Rdbg52 = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.2526041666666667, 0.5 },
+						},
+						Width = Input {
+							Value = 0.22291666666666668,
+						},
+						Height = Input {
+							Value = 0.8592592592592593,
+						},
+						CornerRadius = Input {
+							Value = 0.22429906542056074,
+						},
+					},
+				},
+				th_dbg52 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 1.0000000000000004,
+						},
+						TopLeftGreen = Input {
+							Value = 0.8849314483594064,
+						},
+						TopLeftBlue = Input {
+							Value = 0.7233874963833161,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rdbg52",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m148 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m147",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_dbg52",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Blend = Input {
+							SourceOp = "th_Sdbg52",
+							Source = "Value",
+						},
+					},
+				},
+				th_Sdbg52 = BezierSpline {
+					CtrlWZoom = false,
+					Inputs = { },
+					KeyFrames = {
+						[0] = { 0, Flags = { Linear = true } },
+						[161] = { 0, Flags = { Linear = true } },
+						[162] = { 1, Flags = { Linear = true } },
+					},
+				},
+				th_Rdcard53 = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.2526041666666667, 0.7805555555555556 },
+						},
+						Width = Input {
+							Value = 0.21041666666666667,
+						},
+						Height = Input {
+							Value = 0.19444444444444445,
+						},
+						CornerRadius = Input {
+							Value = 0.09523809523809523,
+						},
+					},
+				},
+				th_dcard53 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 1,
+						},
+						TopLeftGreen = Input {
+							Value = 1,
+						},
+						TopLeftBlue = Input {
+							Value = 1,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rdcard53",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m149 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m148",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_dcard53",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Blend = Input {
+							SourceOp = "th_Sdcard53",
+							Source = "Value",
+						},
+					},
+				},
+				th_Sdcard53 = BezierSpline {
+					CtrlWZoom = false,
+					Inputs = { },
+					KeyFrames = {
+						[0] = { 0, Flags = { Linear = true } },
+						[161] = { 0, Flags = { Linear = true } },
+						[162] = { 1, Flags = { Linear = true } },
+					},
+				},
+				th_Rdtop54 = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.2526041666666667, 0.8731481481481481 },
+						},
+						Width = Input {
+							Value = 0.21041666666666667,
+						},
+						Height = Input {
+							Value = 0.009259259259259259,
+						},
+						CornerRadius = Input {
+							Value = 1,
+						},
+					},
+				},
+				th_dtop54 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 1.0000000000000004,
+						},
+						TopLeftGreen = Input {
+							Value = 0.36129174965822725,
+						},
+						TopLeftBlue = Input {
+							Value = 0,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rdtop54",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m150 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m149",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_dtop54",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Blend = Input {
+							SourceOp = "th_Sdtop54",
+							Source = "Value",
+						},
+					},
+				},
+				th_Sdtop54 = BezierSpline {
+					CtrlWZoom = false,
+					Inputs = { },
+					KeyFrames = {
+						[0] = { 0, Flags = { Linear = true } },
+						[161] = { 0, Flags = { Linear = true } },
+						[162] = { 1, Flags = { Linear = true } },
+					},
+				},
+				th_m151 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m150",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_ttitle16",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Blend = Input {
+							SourceOp = "th_Sagain55",
+							Source = "Value",
+						},
+					},
+				},
+				th_Sagain55 = BezierSpline {
+					CtrlWZoom = false,
+					Inputs = { },
+					KeyFrames = {
+						[0] = { 0, Flags = { Linear = true } },
+						[161] = { 0, Flags = { Linear = true } },
+						[162] = { 1, Flags = { Linear = true } },
+					},
+				},
+				th_m152 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m151",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_ttitle27",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Blend = Input {
+							SourceOp = "th_Sagain56",
+							Source = "Value",
+						},
+					},
+				},
+				th_Sagain56 = BezierSpline {
+					CtrlWZoom = false,
+					Inputs = { },
+					KeyFrames = {
+						[0] = { 0, Flags = { Linear = true } },
+						[161] = { 0, Flags = { Linear = true } },
+						[162] = { 1, Flags = { Linear = true } },
+					},
+				},
+				th_tdmsg57 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.1578125, 0.7574074074074074 },
+						},
+						StyledText = Input {
+							Value = "응답이 기록되었습니다.",
+						},
+						Font = Input {
+							Value = "Pretendard",
+						},
+						Style = Input {
+							Value = "Regular",
+						},
+						Size = Input {
+							Value = 0.0140625,
+						},
+						Red1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Green1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Blue1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = -1,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m153 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m152",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_tdmsg57",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Blend = Input {
+							SourceOp = "th_Sagain58",
+							Source = "Value",
+						},
+					},
+				},
+				th_Sagain58 = BezierSpline {
+					CtrlWZoom = false,
+					Inputs = { },
+					KeyFrames = {
+						[0] = { 0, Flags = { Linear = true } },
+						[161] = { 0, Flags = { Linear = true } },
+						[162] = { 1, Flags = { Linear = true } },
+					},
+				},
+				th_tdlink59 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.1578125, 0.7185185185185186 },
+						},
+						StyledText = Input {
+							Value = "다른 응답 제출",
+						},
+						Font = Input {
+							Value = "Pretendard",
+						},
+						Style = Input {
+							Value = "Regular",
+						},
+						Size = Input {
+							Value = 0.01328125,
+						},
+						Red1 = Input {
+							Value = 0.7706612376240604,
+						},
+						Green1 = Input {
+							Value = 0.08877029386843624,
+						},
+						Blue1 = Input {
+							Value = 0,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = -1,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m154 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m153",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_tdlink59",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Blend = Input {
+							SourceOp = "th_Sagain60",
+							Source = "Value",
+						},
+					},
+				},
+				th_Sagain60 = BezierSpline {
+					CtrlWZoom = false,
+					Inputs = { },
+					KeyFrames = {
+						[0] = { 0, Flags = { Linear = true } },
+						[161] = { 0, Flags = { Linear = true } },
+						[162] = { 1, Flags = { Linear = true } },
+					},
+				},
+				th_Rnotch61 = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.2526041666666667, 0.9111111111111111 },
+						},
+						Width = Input {
+							Value = 0.0625,
+						},
+						Height = Input {
+							Value = 0.024074074074074074,
+						},
+						CornerRadius = Input {
+							Value = 1,
+						},
+					},
+				},
+				th_notch61 = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0.02392787519457255,
+						},
+						TopLeftGreen = Input {
+							Value = 0.02392787519457255,
+						},
+						TopLeftBlue = Input {
+							Value = 0.026011155533165905,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rnotch61",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m155 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m154",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_notch61",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_tclock62 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.15885416666666666, 0.9101851851851852 },
+						},
+						StyledText = Input {
+							Value = "12:30",
+						},
+						Font = Input {
+							Value = "Pretendard",
+						},
+						Style = Input {
+							Value = "SemiBold",
+						},
+						Size = Input {
+							Value = 0.01328125,
+						},
+						Red1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Green1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Blue1 = Input {
+							Value = 0.028190470833320113,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = -1,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m156 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m155",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_tclock62",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Rrc = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.6380208333333334, 0.5 },
+						},
+						Width = Input {
+							Value = 0.4583333333333333,
+						},
+						Height = Input {
+							Value = 0.4444444444444444,
+						},
+						CornerRadius = Input {
+							Value = 0.15,
+						},
+					},
+				},
+				th_Rrci = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.6380208333333334, 0.5 },
+						},
+						Width = Input {
+							Value = 0.45208333333333334,
+						},
+						Height = Input {
+							Value = 0.43333333333333335,
+						},
+						CornerRadius = Input {
+							Value = 0.1282051282051282,
+						},
+					},
+				},
+				th_rc_c = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftRed",
+						},
+						TopLeftGreen = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftGreen",
+						},
+						TopLeftBlue = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftBlue",
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rrc",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m157 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m156",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_rc_c",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_rc_w = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 1,
+						},
+						TopLeftGreen = Input {
+							Value = 1,
+						},
+						TopLeftBlue = Input {
+							Value = 1,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rrci",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m158 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m157",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_rc_w",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_rcname = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.5, 0.7546296296296297 },
+						},
+						StyledText = Input {
+							Value = "신청 안내",
+						},
+						Font = Input {
+							Value = "Pretendard",
+						},
+						Style = Input {
+							Value = "Bold",
+						},
+						Size = Input {
+							Value = 0.02683949872405025,
+						},
+						Red1 = Input {
+							Value = 1,
+						},
+						Green1 = Input {
+							Value = 1,
+						},
+						Blue1 = Input {
+							Value = 1,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = 0,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Rrcname = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.5, 0.7546296296296297 },
+							Expression = "Point(0.4212239583333333+th_Rrcname.Width/2,0.7546296296296297)",
+						},
+						Width = Input {
+							Value = 0.1,
+							Expression = "(((th_rcname.Output[time].DataWindow[3]-th_rcname.Output[time].DataWindow[1])*1920/th_rcname.Output[time].Width)+69)/1920",
+						},
+						Height = Input {
+							Value = 0.05787037037037038,
+						},
+						CornerRadius = Input {
+							Value = 1,
+						},
+					},
+				},
+				th_rcname_c = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftRed",
+						},
+						TopLeftGreen = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftGreen",
+						},
+						TopLeftBlue = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftBlue",
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rrcname",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m159 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m158",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_rcname_c",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m160 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m159",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_rcname",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Center = Input {
+							Value = { 0.5, 0.5 },
+							Expression = "Point(th_Rrcname.Center.X,0.5)",
+						},
+					},
+				},
+				th_rcaffil = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.5, 0.7546296296296297 },
+						},
+						StyledText = Input {
+							Value = "NSBD",
+						},
+						Font = Input {
+							Value = "Pretendard",
+						},
+						Style = Input {
+							Value = "Bold",
+						},
+						Size = Input {
+							Value = 0.0223662489367085,
+						},
+						Red1 = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftRed",
+						},
+						Green1 = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftGreen",
+						},
+						Blue1 = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftBlue",
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = 0,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Rrcaff = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.5, 0.7546296296296297 },
+							Expression = "Point(th_Rrcname.Center.X+th_Rrcname.Width/2+0.010416666666666666+th_Rrcaff.Width/2,0.7546296296296297)",
+						},
+						Width = Input {
+							Value = 0.1,
+							Expression = "(((th_rcaffil.Output[time].DataWindow[3]-th_rcaffil.Output[time].DataWindow[1])*1920/th_rcaffil.Output[time].Width)+130)/1920",
+						},
+						Height = Input {
+							Value = 0.05787037037037038,
+						},
+						CornerRadius = Input {
+							Value = 1,
+						},
+					},
+				},
+				th_Rrcaffi = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.5, 0.7546296296296297 },
+							Expression = "Point(th_Rrcaff.Center.X,0.7546296296296297)",
+						},
+						Width = Input {
+							Value = 0.1,
+							Expression = "th_Rrcaff.Width-0.00390625",
+						},
+						Height = Input {
+							Value = 0.050925925925925875,
+						},
+						CornerRadius = Input {
+							Value = 1,
+						},
+					},
+				},
+				th_rcicon = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.5, 0.7557870370370372 },
+							Expression = "Point(th_Rrcaff.Center.X-th_Rrcaff.Width/2+0.022135416666666668,0.7557870370370372)",
+						},
+						StyledText = Input {
+							Value = "♪",
+						},
+						Font = Input {
+							Value = "Segoe UI Symbol",
+						},
+						Style = Input {
+							Value = "Regular",
+						},
+						Size = Input {
+							Value = 0.02348126530475325,
+						},
+						Red1 = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftRed",
+						},
+						Green1 = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftGreen",
+						},
+						Blue1 = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftBlue",
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = 0,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_rcaff_c = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftRed",
+						},
+						TopLeftGreen = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftGreen",
+						},
+						TopLeftBlue = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftBlue",
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rrcaff",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m161 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m160",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_rcaff_c",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_rcaff_w = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 1,
+						},
+						TopLeftGreen = Input {
+							Value = 1,
+						},
+						TopLeftBlue = Input {
+							Value = 1,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rrcaffi",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m162 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m161",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_rcaff_w",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m163 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m162",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_rcicon",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m164 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m163",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_rcaffil",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Center = Input {
+							Value = { 0.5, 0.5 },
+							Expression = "Point(th_Rrcaff.Center.X-th_Rrcaff.Width/2+0.044921875+((th_rcaffil.Output[time].DataWindow[3]-th_rcaffil.Output[time].DataWindow[1])*1920/th_rcaffil.Output[time].Width)/1920/2,0.5)",
+						},
+					},
+				},
+				th_r1 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.6380208333333334, 0.6296296296296297 },
+						},
+						StyledText = Input {
+							Value = "신청곡 · 학번이름 쓰고",
+						},
+						Font = Input {
+							Value = "Cafe24 Ssurround",
+						},
+						Style = Input {
+							Value = "Bold",
+						},
+						Size = Input {
+							Value = 0.052,
+						},
+						Red1 = Input {
+							Value = 0.0153261367602296,
+						},
+						Green1 = Input {
+							Value = 0.0175521639615446,
+						},
+						Blue1 = Input {
+							Value = 0.0224107262224479,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = 0,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_fitr1 = Transform {
+					CtrlWZoom = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "th_r1",
+							Source = "Output",
+						},
+						Pivot = Input {
+							Value = { 0.6380208333333334, 0.6296296296296297 },
+						},
+						Size = Input {
+							Value = 1,
+							Expression = "min(1,0.4083333333333333/(((th_r1.Output[time].DataWindow[3]-th_r1.Output[time].DataWindow[1])*1920/th_r1.Output[time].Width)/1920))",
+						},
+					},
+				},
+				th_m165 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m164",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_fitr1",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_r2 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.6380208333333334, 0.55 },
+						},
+						StyledText = Input {
+							Value = "익명을 원하면 체크!",
+						},
+						Font = Input {
+							Value = "Cafe24 Ssurround",
+						},
+						Style = Input {
+							Value = "Bold",
+						},
+						Size = Input {
+							Value = 0.05,
+						},
+						Red1 = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftRed",
+						},
+						Green1 = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftGreen",
+						},
+						Blue1 = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftBlue",
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = 0,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_fitr2 = Transform {
+					CtrlWZoom = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "th_r2",
+							Source = "Output",
+						},
+						Pivot = Input {
+							Value = { 0.6380208333333334, 0.55 },
+						},
+						Size = Input {
+							Value = 1,
+							Expression = "min(1,0.4083333333333333/(((th_r2.Output[time].DataWindow[3]-th_r2.Output[time].DataWindow[1])*1920/th_r2.Output[time].Width)/1920))",
+						},
+					},
+				},
+				th_m166 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m165",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_fitr2",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_r3 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.6380208333333334, 0.4629629629629629 },
+						},
+						StyledText = Input {
+							Value = "제출 누르면 신청 완료!",
+						},
+						Font = Input {
+							Value = "Cafe24 Ssurround",
+						},
+						Style = Input {
+							Value = "Bold",
+						},
+						Size = Input {
+							Value = 0.052,
+						},
+						Red1 = Input {
+							Value = 0.0153261367602296,
+						},
+						Green1 = Input {
+							Value = 0.0175521639615446,
+						},
+						Blue1 = Input {
+							Value = 0.0224107262224479,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = 0,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_fitr3 = Transform {
+					CtrlWZoom = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "th_r3",
+							Source = "Output",
+						},
+						Pivot = Input {
+							Value = { 0.6380208333333334, 0.4629629629629629 },
+						},
+						Size = Input {
+							Value = 1,
+							Expression = "min(1,0.4083333333333333/(((th_r3.Output[time].DataWindow[3]-th_r3.Output[time].DataWindow[1])*1920/th_r3.Output[time].Width)/1920))",
+						},
+					},
+				},
+				th_m167 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m166",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_fitr3",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_r4 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.6380208333333334, 0.375 },
+						},
+						StyledText = Input {
+							Value = "사연은 안 써도 돼요",
+						},
+						Font = Input {
+							Value = "Cafe24 Ssurround",
+						},
+						Style = Input {
+							Value = "Bold",
+						},
+						Size = Input {
+							Value = 0.05,
+						},
+						Red1 = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftRed",
+						},
+						Green1 = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftGreen",
+						},
+						Blue1 = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftBlue",
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = 0,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_fitr4 = Transform {
+					CtrlWZoom = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "th_r4",
+							Source = "Output",
+						},
+						Pivot = Input {
+							Value = { 0.6380208333333334, 0.375 },
+						},
+						Size = Input {
+							Value = 1,
+							Expression = "min(1,0.4083333333333333/(((th_r4.Output[time].DataWindow[3]-th_r4.Output[time].DataWindow[1])*1920/th_r4.Output[time].Width)/1920))",
+						},
+					},
+				},
+				th_m168 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m167",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_fitr4",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m2 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_m168",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Blend = Input {
+							Value = 1,
+							Expression = "iif(th_ctl.FadeIn<1,1,min(1,time/th_ctl.FadeIn))*iif(th_ctl.FadeOut<1,1,min(1,(comp.RenderEnd-time)/th_ctl.FadeOut))",
+						},
+					},
+				},
+				th_xf = Transform {
+					CtrlWZoom = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "th_m2",
+							Source = "Output",
+						},
+					},
+				},
+			},
+		},
+	},
+	ActiveTool = "th01_FormDemo",
+}

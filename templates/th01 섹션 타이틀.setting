@@ -1,0 +1,386 @@
+{
+	Tools = ordered() {
+		th01_Section = MacroOperator {
+			Inputs = ordered() {
+				Input1 = InstanceInput {
+					SourceOp = "Text3",
+					Source = "StyledText",
+					Name = "제목",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "Text1",
+					Source = "StyledText",
+					Name = "아이콘",
+				},
+				Input3 = InstanceInput {
+					SourceOp = "Text4",
+					Source = "StyledText",
+					Name = "라벨",
+				},
+				Input4 = InstanceInput {
+					SourceOp = "Text5",
+					Source = "StyledText",
+					Name = "부제",
+				},
+				Input5 = InstanceInput {
+					SourceOp = "Text2",
+					Source = "StyledText",
+					Name = "배경 글자",
+				},
+				Input6 = InstanceInput {
+					SourceOp = "th_xf",
+					Source = "Center",
+					Name = "위치",
+					Page = "Controls",
+				},
+				Input7 = InstanceInput {
+					SourceOp = "th_xf",
+					Source = "Size",
+					Name = "크기",
+					Default = 1,
+				},
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "th_xf",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 0, 0 } },
+			Tools = ordered() {
+				Rectangle2 = RectangleMask {
+					Inputs = {
+						EffectMask = Input {
+							SourceOp = "Rectangle1",
+							Source = "Mask",
+						},
+						Filter = Input { Value = FuID { "Fast Gaussian" }, },
+						PaintMode = Input { Value = FuID { "Subtract" }, },
+						MaskWidth = Input { Value = 1920, },
+						MaskHeight = Input { Value = 1080, },
+						PixelAspect = Input { Value = { 1, 1 }, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						ClippingMode = Input { Value = FuID { "None" }, },
+						Center = Input { Value = { -0.206110204002755, -0.552521798277137 }, },
+						Width = Input { Value = 1.5625, },
+						Height = Input { Value = 0.859259259259259, },
+						Angle = Input { Value = 32.535067157935, }
+					},
+				},
+				Text3 = TextPlus {
+					Inputs = {
+						EffectMask = Input {
+							SourceOp = "Rectangle2",
+							Source = "Mask",
+						},
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Wrap = Input { Value = 1, },
+						Center = Input { Value = { 0.666145833333333, 0.246296296296296 }, },
+						LayoutRotation = Input { Value = 1, },
+						TransformRotation = Input { Value = 1, },
+						Softness1 = Input { Value = 1, },
+						StyledText = Input { Value = "남성역 플리마켓 현장", },
+						Font = Input { Value = "Cafe24 Ssurround", },
+						Style = Input { Value = "Bold", },
+						Size = Input { Value = 0.0576604062215846, },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalJustificationNew = Input { Value = 3, }
+					},
+					Version = 1
+				},
+				Merge1 = Merge {
+					Inputs = {
+						Background = Input {
+							SourceOp = "Background1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Text1",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, }
+					},
+				},
+				Merge4 = Merge {
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge3",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Text3",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, }
+					},
+				},
+				Text1 = TextPlus {
+					Inputs = {
+						EffectMask = Input {
+							SourceOp = "Rectangle2",
+							Source = "Mask",
+						},
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Wrap = Input { Value = 1, },
+						Center = Input { Value = { 0.621282327586207, 0.185185185185185 }, },
+						LayoutRotation = Input { Value = 1, },
+						TransformRotation = Input { Value = 1, },
+						Red1 = Input { Value = 0.00181367327817928, },
+						Green1 = Input { Value = 0.0810144927536232, },
+						Blue1 = Input { Value = 0.0731884057971014, },
+						Softness1 = Input { Value = 1, },
+						StyledText = Input { Value = "⚑", },
+						Font = Input { Value = "Segoe UI Symbol", },
+						Style = Input { Value = "Regular", },
+						Size = Input { Value = 0.214685854214887, },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalJustificationNew = Input { Value = 3, }
+					},
+					Version = 1
+				},
+				Background1 = Background {
+					Inputs = {
+						EffectMask = Input {
+							SourceOp = "Rectangle2",
+							Source = "Mask",
+						},
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Type = Input { Value = FuID { "Horizontal" }, },
+						TopLeftRed = Input { Value = 0.000153353177539821, },
+						TopLeftGreen = Input { Value = 0.00668328295367188, },
+						TopLeftBlue = Input { Value = 0.00587752369899746, },
+						TopRightRed = Input { Value = 0.00146200863698775, },
+						TopRightGreen = Input { Value = 0.0681884057971014, },
+						TopRightBlue = Input { Value = 0.061231884057971, },
+						BottomLeftRed = Input { Value = 0.000153353177539821, },
+						BottomLeftGreen = Input { Value = 0.00668328295367188, },
+						BottomLeftBlue = Input { Value = 0.00587752369899746, },
+						BottomRightRed = Input { Value = 0.00146200863698775, },
+						BottomRightGreen = Input { Value = 0.0681884057971014, },
+						BottomRightBlue = Input { Value = 0.061231884057971, }
+					},
+				},
+				Text4 = TextPlus {
+					Inputs = {
+						EffectMask = Input {
+							SourceOp = "Rectangle2",
+							Source = "Mask",
+						},
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Wrap = Input { Value = 1, },
+						Center = Input { Value = { 0.909375, 0.241666666666667 }, },
+						LayoutRotation = Input { Value = 1, },
+						TransformRotation = Input { Value = 1, },
+						Red1 = Input { Value = 0.670807453416149, },
+						Green1 = Input { Value = 0.801449275362319, },
+						Blue1 = Input { Value = 0.789855072463768, },
+						Softness1 = Input { Value = 1, },
+						StyledText = Input { Value = "  현장", },
+						Font = Input { Value = "Cafe24 Ssurround air", },
+						Style = Input { Value = "Light", },
+						Size = Input { Value = 0.0388872507075803, },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalJustificationNew = Input { Value = 3, }
+					},
+					Version = 1
+				},
+				Text5 = TextPlus {
+					Inputs = {
+						EffectMask = Input {
+							SourceOp = "Rectangle2",
+							Source = "Mask",
+						},
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Wrap = Input { Value = 1, },
+						Center = Input { Value = { 0.840885416666667, 0.150925925925926 }, },
+						LayoutRotation = Input { Value = 1, },
+						TransformRotation = Input { Value = 1, },
+						Softness1 = Input { Value = 1, },
+						StyledText = Input { Value = "제로웨이스트 장터", },
+						Font = Input { Value = "Cafe24 Ssurround air", },
+						Style = Input { Value = "Light", },
+						Size = Input { Value = 0.0348644316688651, },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalJustificationNew = Input { Value = 3, }
+					},
+					Version = 1
+				},
+				Merge3 = Merge {
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Background2",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, }
+					},
+				},
+				Merge6 = Merge {
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge5",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Text5",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, }
+					},
+				},
+				Merge5 = Merge {
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge4",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Text4",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, }
+					},
+				},
+				Background2 = Background {
+					Inputs = {
+						EffectMask = Input {
+							SourceOp = "Rectangle3",
+							Source = "Mask",
+						},
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Type = Input { Value = FuID { "Horizontal" }, },
+						TopLeftRed = Input { Value = 0.00129914424584057, },
+						TopLeftGreen = Input { Value = 0.0617753623188406, },
+						TopLeftBlue = Input { Value = 0.0552536231884058, },
+						TopRightRed = Input { Value = 0.826086956521739, },
+						TopRightGreen = Input { Value = 0.90072463768116, },
+						TopRightBlue = Input { Value = 0.894927536231884, },
+						BottomLeftRed = Input { Value = 0.00129914424584057, },
+						BottomLeftGreen = Input { Value = 0.0617753623188406, },
+						BottomLeftBlue = Input { Value = 0.0552536231884058, },
+						BottomRightRed = Input { Value = 0.826086956521739, },
+						BottomRightGreen = Input { Value = 0.90072463768116, },
+						BottomRightBlue = Input { Value = 0.894927536231884, }
+					},
+				},
+				Text2 = TextPlus {
+					Inputs = {
+						EffectMask = Input {
+							SourceOp = "Rectangle2",
+							Source = "Mask",
+						},
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Wrap = Input { Value = 1, },
+						Center = Input { Value = { 0.82727191091954, 0.114814814814815 }, },
+						LayoutRotation = Input { Value = 1, },
+						TransformRotation = Input { Value = 1, },
+						Red1 = Input { Value = 0.00219935463118492, },
+						Green1 = Input { Value = 0.0956521739130435, },
+						Blue1 = Input { Value = 0.0851449275362319, },
+						Softness1 = Input { Value = 1, },
+						StyledText = Input { Value = "NSBD", },
+						Font = Input { Value = "Cafe24 Ssurround", },
+						Style = Input { Value = "Bold", },
+						Size = Input { Value = 0.158230882189465, },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalJustificationNew = Input { Value = 3, }
+					},
+					Version = 1
+				},
+				Rectangle3 = RectangleMask {
+					Inputs = {
+						Filter = Input { Value = FuID { "Fast Gaussian" }, },
+						MaskWidth = Input { Value = 1920, },
+						MaskHeight = Input { Value = 1080, },
+						PixelAspect = Input { Value = { 1, 1 }, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						ClippingMode = Input { Value = FuID { "None" }, },
+						Center = Input { Value = { 0.78668283045977, 0.194444444444444 }, },
+						Width = Input {
+							SourceOp = "Rectangle3너비",
+							Source = "Value",
+						},
+						Height = Input { Value = 0.00185185185185185, }
+					},
+				},
+				Rectangle1 = RectangleMask {
+					Inputs = {
+						Filter = Input { Value = FuID { "Fast Gaussian" }, },
+						MaskWidth = Input { Value = 1920, },
+						MaskHeight = Input { Value = 1080, },
+						PixelAspect = Input { Value = { 1, 1 }, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						ClippingMode = Input { Value = FuID { "None" }, },
+						Center = Input { Value = { 1, 0.194444444444444 }, },
+						Width = Input {
+							SourceOp = "Rectangle1너비",
+							Source = "Value",
+						},
+						Height = Input { Value = 0.214814814814815, }
+					},
+				},
+				Merge2 = Merge {
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Text2",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, }
+					},
+				},
+				["Rectangle3너비"] = BezierSpline {
+					SplineColor = { Red = 248, Green = 41, Blue = 80 },
+					CtrlWZoom = false,
+					KeyFrames = {
+						[0] = { 0, RH = { 1.66666666666667, 0.197072557471264 }, Flags = { Linear = true } },
+						[5] = { 0.591217672413793, LH = { 3.33333333333333, 0.394145114942529 }, RH = { 33338.3333333333, 0.591217672413793 }, Flags = { Linear = true } },
+						[100005] = { 0.591217672413793, LH = { 66671.6666666667, 0.591217672413793 }, Flags = { Linear = true } }
+					}
+				},
+				["Rectangle1너비"] = BezierSpline {
+					SplineColor = { Red = 248, Green = 41, Blue = 80 },
+					CtrlWZoom = false,
+					KeyFrames = {
+						[0] = { 0, RH = { 1.66666666666667, 0.46011733716475 }, Flags = { Linear = true } },
+						[5] = { 1.38035201149425, LH = { 3.33333333333333, 0.9202346743295 }, RH = { 33338.3333333333, 1.38035201149425 }, Flags = { Linear = true } },
+						[100005] = { 1.38035201149425, LH = { 66671.6666666667, 1.38035201149425 }, Flags = { Linear = true } }
+					}
+				},
+				th_xf = Transform {
+					Inputs = {
+						Input = Input { SourceOp = "Merge6", Source = "Output", },
+					},
+				},
+			},
+		}
+	},
+	ActiveTool = "th01_Section"
+}

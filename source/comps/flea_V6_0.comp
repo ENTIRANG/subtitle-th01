@@ -1,0 +1,132 @@
+Composition {
+	CurrentTime = -116,
+	RenderRange = { -116, 2879 },
+	GlobalRange = { -116, 2879 },
+	CurrentID = 37,
+	HiQ = true,
+	PlaybackUpdateMode = 0,
+	StereoMode = false,
+	Version = "DaVinci Resolve Studio 21.1.0.0014",
+	SavedOutputs = 0,
+	HeldTools = 0,
+	DisabledTools = 0,
+	LockedTools = 0,
+	AudioOffset = 0,
+	Resumable = true,
+	OutputClips = {
+	},
+	CustomData = { TEMPLATE_ID = "Text+" },
+	Tools = {
+		Background1 = Background {
+			Inputs = {
+				GlobalIn = Input { Value = -116, },
+				GlobalOut = Input { Value = 2879, },
+				Width = Input { Value = 1920, },
+				Height = Input { Value = 1080, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				TopLeftAlpha = Input { Value = 0, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 550, 16.5 } },
+		},
+		Merge2 = Merge {
+			CtrlWZoom = false,
+			Inputs = {
+				Blend = Input { Value = 0.34, },
+				Background = Input {
+					SourceOp = "Merge1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Background2",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 220, 16.5 } },
+		},
+		Merge1 = Merge {
+			Inputs = {
+				Blend = Input { Value = 0.7, },
+				Background = Input {
+					SourceOp = "Background1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Text1",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 440, 16.5 } },
+		},
+		MediaOut1 = Saver {
+			Inputs = {
+				Index = Input { Value = "0", },
+				Input = Input {
+					SourceOp = "Merge2",
+					Source = "Output",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 440, 49.5 } },
+		},
+		Rectangle1 = RectangleMask {
+			Inputs = {
+				Filter = Input { Value = FuID { "Fast Gaussian" }, },
+				MaskWidth = Input { Value = 1920, },
+				MaskHeight = Input { Value = 1080, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Center = Input { Value = { 0.8875, 0.918518518518519 }, },
+				Width = Input { Value = 0.125, },
+				Height = Input { Value = 0.00185185185185185, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 0, 16.5 } },
+		},
+		Text1 = TextPlus {
+			CtrlWZoom = false,
+			Inputs = {
+				GlobalIn = Input { Value = -116, },
+				GlobalOut = Input { Value = 2879, },
+				Width = Input { Value = 1920, },
+				Height = Input { Value = 1080, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				Wrap = Input { Value = 1, },
+				Center = Input { Value = { 0.887239583333333, 0.942592592592593 }, },
+				LayoutRotation = Input { Value = 1, },
+				TransformRotation = Input { Value = 1, },
+				Softness1 = Input { Value = 1, },
+				StyledText = Input { Value = "남성중학교 방송부", },
+				Font = Input { Value = "Cafe24 Ssurround air", },
+				Style = Input { Value = "Light", },
+				Size = Input { Value = 0.020114095193576, },
+				VerticalJustificationNew = Input { Value = 3, },
+				HorizontalJustificationNew = Input { Value = 3, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 110, 16.5 } },
+			Version = 1
+		},
+		Background2 = Background {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Rectangle1",
+					Source = "Mask",
+				},
+				GlobalIn = Input { Value = -116, },
+				GlobalOut = Input { Value = 2879, },
+				Width = Input { Value = 1920, },
+				Height = Input { Value = 1080, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				TopLeftRed = Input { Value = 1, },
+				TopLeftGreen = Input { Value = 1, },
+				TopLeftBlue = Input { Value = 1, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 330, 16.5 } },
+		}
+	},
+	Frames = {
+	},
+}

@@ -1,0 +1,1120 @@
+{
+	Tools = ordered() {
+		th01_InfoCard = MacroOperator {
+			Inputs = ordered() {
+				Input1 = InstanceInput {
+					SourceOp = "th_line1",
+					Source = "StyledText",
+					Name = "큰 줄",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "th_line2",
+					Source = "StyledText",
+					Name = "작은 줄",
+				},
+				Input3 = InstanceInput {
+					SourceOp = "th_pname",
+					Source = "StyledText",
+					Name = "이름 알약",
+				},
+				Input4 = InstanceInput {
+					SourceOp = "th_picon",
+					Source = "StyledText",
+					Name = "아이콘",
+				},
+				Input5 = InstanceInput {
+					SourceOp = "th_paffil",
+					Source = "StyledText",
+					Name = "소속 알약",
+				},
+				Input6 = InstanceInput {
+					SourceOp = "th_color",
+					Source = "TopLeftRed",
+					Name = "색",
+					ControlGroup = 1,
+					Default = 0.9213184533745145,
+				},
+				Input7 = InstanceInput {
+					SourceOp = "th_color",
+					Source = "TopLeftGreen",
+					ControlGroup = 1,
+					Default = 0.34914972649667725,
+				},
+				Input8 = InstanceInput {
+					SourceOp = "th_color",
+					Source = "TopLeftBlue",
+					ControlGroup = 1,
+					Default = 0.01675504751793867,
+				},
+				Input9 = InstanceInput {
+					SourceOp = "th_m1",
+					Source = "Blend",
+					Name = "벽",
+					Default = 1,
+				},
+				Input10 = InstanceInput {
+					SourceOp = "th_ctl",
+					Source = "FadeIn",
+					Name = "내용 페이드 인(프레임)",
+				},
+				Input11 = InstanceInput {
+					SourceOp = "th_ctl",
+					Source = "FadeOut",
+					Name = "내용 페이드 아웃(프레임)",
+				},
+				Input12 = InstanceInput {
+					SourceOp = "th_xf",
+					Source = "Center",
+					Name = "위치",
+					Page = "Controls",
+				},
+				Input13 = InstanceInput {
+					SourceOp = "th_xf",
+					Source = "Size",
+					Name = "크기",
+					Default = 1,
+				},
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "th_xf",
+					Source = "Output",
+				},
+			},
+			ViewInfo = GroupInfo { Pos = { 0, 0 } },
+			Tools = ordered() {
+				th_color = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0.9213184533745145,
+						},
+						TopLeftGreen = Input {
+							Value = 0.34914972649667725,
+						},
+						TopLeftBlue = Input {
+							Value = 0.01675504751793867,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+					},
+				},
+				th_ctl = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0,
+						},
+						TopLeftGreen = Input {
+							Value = 0,
+						},
+						TopLeftBlue = Input {
+							Value = 0,
+						},
+						TopLeftAlpha = Input {
+							Value = 0,
+						},
+						FadeIn = Input {
+							Value = 6,
+						},
+						FadeOut = Input {
+							Value = 6,
+						},
+					},
+					UserControls = ordered() {
+					FadeIn = {
+						LINKS_Name = "Fade In",
+						LINKID_DataType = "Number",
+						INPID_InputControl = "SliderControl",
+						INP_Default = 6,
+						INP_MinScale = 0,
+						INP_MaxScale = 60,
+						INP_Integer = true,
+						ICS_ControlPage = "Controls",
+					},
+					FadeOut = {
+						LINKS_Name = "Fade Out",
+						LINKID_DataType = "Number",
+						INPID_InputControl = "SliderControl",
+						INP_Default = 6,
+						INP_MinScale = 0,
+						INP_MaxScale = 60,
+						INP_Integer = true,
+						ICS_ControlPage = "Controls",
+					},
+				},
+				},
+				th_canvas = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0,
+						},
+						TopLeftGreen = Input {
+							Value = 0,
+						},
+						TopLeftBlue = Input {
+							Value = 0,
+						},
+						TopLeftAlpha = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_wall = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Type = Input {
+							Value = FuID { "Vertical" },
+						},
+						TopLeftRed = Input {
+							Value = 0.8862745098039215,
+						},
+						TopLeftGreen = Input {
+							Value = 0.9098039215686274,
+						},
+						TopLeftBlue = Input {
+							Value = 0.8745098039215686,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						TopRightRed = Input {
+							Value = 0.8862745098039215,
+						},
+						TopRightGreen = Input {
+							Value = 0.9098039215686274,
+						},
+						TopRightBlue = Input {
+							Value = 0.8745098039215686,
+						},
+						TopRightAlpha = Input {
+							Value = 1,
+						},
+						BottomLeftRed = Input {
+							Value = 0.8,
+						},
+						BottomLeftGreen = Input {
+							Value = 0.8196078431372549,
+						},
+						BottomLeftBlue = Input {
+							Value = 0.7843137254901961,
+						},
+						BottomLeftAlpha = Input {
+							Value = 1,
+						},
+						BottomRightRed = Input {
+							Value = 0.8,
+						},
+						BottomRightGreen = Input {
+							Value = 0.8196078431372549,
+						},
+						BottomRightBlue = Input {
+							Value = 0.7843137254901961,
+						},
+						BottomRightAlpha = Input {
+							Value = 1,
+						},
+					},
+				},
+				th_m1 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_canvas",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_wall",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Blend = Input {
+							Value = 1,
+						},
+					},
+				},
+				th_canvas_c = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0,
+						},
+						TopLeftGreen = Input {
+							Value = 0,
+						},
+						TopLeftBlue = Input {
+							Value = 0,
+						},
+						TopLeftAlpha = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Rcard = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.5, 0.481481481481481 },
+						},
+						Width = Input {
+							Value = 0.805208333333333,
+						},
+						Height = Input {
+							Value = 0.3333333333333333,
+						},
+						CornerRadius = Input {
+							Value = 0.2,
+						},
+					},
+				},
+				th_Rcardi = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.5, 0.481481481481481 },
+						},
+						Width = Input {
+							Value = 0.798958333333333,
+						},
+						Height = Input {
+							Value = 0.32222222222222224,
+						},
+						CornerRadius = Input {
+							Value = 0.1724137931034483,
+						},
+					},
+				},
+				th_card_c = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftRed",
+						},
+						TopLeftGreen = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftGreen",
+						},
+						TopLeftBlue = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftBlue",
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rcard",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m101 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_canvas_c",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_card_c",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_card_w = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 1,
+						},
+						TopLeftGreen = Input {
+							Value = 1,
+						},
+						TopLeftBlue = Input {
+							Value = 1,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rcardi",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m102 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m101",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_card_w",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_pname = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.5, 0.680555555555555 },
+						},
+						StyledText = Input {
+							Value = "신청 안내",
+						},
+						Font = Input {
+							Value = "Pretendard",
+						},
+						Style = Input {
+							Value = "Bold",
+						},
+						Size = Input {
+							Value = 0.02683949872405025,
+						},
+						Red1 = Input {
+							Value = 1,
+						},
+						Green1 = Input {
+							Value = 1,
+						},
+						Blue1 = Input {
+							Value = 1,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = 0,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Rpname = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.5, 0.680555555555555 },
+							Expression = "Point(0.10976562500000017+th_Rpname.Width/2,0.680555555555555)",
+						},
+						Width = Input {
+							Value = 0.1,
+							Expression = "(((th_pname.Output[time].DataWindow[3]-th_pname.Output[time].DataWindow[1])*1920/th_pname.Output[time].Width)+69)/1920",
+						},
+						Height = Input {
+							Value = 0.05787037037037038,
+						},
+						CornerRadius = Input {
+							Value = 1,
+						},
+					},
+				},
+				th_pname_c = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftRed",
+						},
+						TopLeftGreen = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftGreen",
+						},
+						TopLeftBlue = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftBlue",
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rpname",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m103 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m102",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_pname_c",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m104 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m103",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_pname",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Center = Input {
+							Value = { 0.5, 0.5 },
+							Expression = "Point(th_Rpname.Center.X,0.5)",
+						},
+					},
+				},
+				th_paffil = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.5, 0.680555555555555 },
+						},
+						StyledText = Input {
+							Value = "NSBD",
+						},
+						Font = Input {
+							Value = "Pretendard",
+						},
+						Style = Input {
+							Value = "Bold",
+						},
+						Size = Input {
+							Value = 0.0223662489367085,
+						},
+						Red1 = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftRed",
+						},
+						Green1 = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftGreen",
+						},
+						Blue1 = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftBlue",
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = 0,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_Rpaff = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.5, 0.680555555555555 },
+							Expression = "Point(th_Rpname.Center.X+th_Rpname.Width/2+0.010416666666666666+th_Rpaff.Width/2,0.680555555555555)",
+						},
+						Width = Input {
+							Value = 0.1,
+							Expression = "(((th_paffil.Output[time].DataWindow[3]-th_paffil.Output[time].DataWindow[1])*1920/th_paffil.Output[time].Width)+130)/1920",
+						},
+						Height = Input {
+							Value = 0.05787037037037038,
+						},
+						CornerRadius = Input {
+							Value = 1,
+						},
+					},
+				},
+				th_Rpaffi = RectangleMask {
+					CtrlWZoom = false,
+					Inputs = {
+						MaskWidth = Input {
+							Value = 1920,
+						},
+						MaskHeight = Input {
+							Value = 1080,
+						},
+						PixelAspect = Input {
+							Value = { 1, 1 },
+						},
+						ClippingMode = Input {
+							Value = FuID { "None" },
+						},
+						Center = Input {
+							Value = { 0.5, 0.680555555555555 },
+							Expression = "Point(th_Rpaff.Center.X,0.680555555555555)",
+						},
+						Width = Input {
+							Value = 0.1,
+							Expression = "th_Rpaff.Width-0.00390625",
+						},
+						Height = Input {
+							Value = 0.050925925925925875,
+						},
+						CornerRadius = Input {
+							Value = 1,
+						},
+					},
+				},
+				th_picon = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.5, 0.6817129629629626 },
+							Expression = "Point(th_Rpaff.Center.X-th_Rpaff.Width/2+0.022135416666666668,0.6817129629629626)",
+						},
+						StyledText = Input {
+							Value = "♪",
+						},
+						Font = Input {
+							Value = "Segoe UI Symbol",
+						},
+						Style = Input {
+							Value = "Regular",
+						},
+						Size = Input {
+							Value = 0.02348126530475325,
+						},
+						Red1 = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftRed",
+						},
+						Green1 = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftGreen",
+						},
+						Blue1 = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftBlue",
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = 0,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_paff_c = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftRed",
+						},
+						TopLeftGreen = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftGreen",
+						},
+						TopLeftBlue = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftBlue",
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rpaff",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m105 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m104",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_paff_c",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_paff_w = Background {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						TopLeftRed = Input {
+							Value = 1,
+						},
+						TopLeftGreen = Input {
+							Value = 1,
+						},
+						TopLeftBlue = Input {
+							Value = 1,
+						},
+						TopLeftAlpha = Input {
+							Value = 1,
+						},
+						EffectMask = Input {
+							SourceOp = "th_Rpaffi",
+							Source = "Mask",
+						},
+					},
+				},
+				th_m106 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m105",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_paff_w",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m107 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m106",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_picon",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m108 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m107",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_paffil",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Center = Input {
+							Value = { 0.5, 0.5 },
+							Expression = "Point(th_Rpaff.Center.X-th_Rpaff.Width/2+0.044921875+((th_paffil.Output[time].DataWindow[3]-th_paffil.Output[time].DataWindow[1])*1920/th_paffil.Output[time].Width)/1920/2,0.5)",
+						},
+					},
+				},
+				th_line1 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.5, 0.531481481481481 },
+						},
+						StyledText = Input {
+							Value = "신청 방법이 바뀌었어요!",
+						},
+						Font = Input {
+							Value = "Cafe24 Ssurround",
+						},
+						Style = Input {
+							Value = "Bold",
+						},
+						Size = Input {
+							Value = 0.062,
+						},
+						Red1 = Input {
+							Value = 0.0689676154210332,
+						},
+						Green1 = Input {
+							Value = 0.0789847378269507,
+						},
+						Blue1 = Input {
+							Value = 0.09993118102552181,
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = 0,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_line2 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input {
+							Value = 1920,
+						},
+						Height = Input {
+							Value = 1080,
+						},
+						UseFrameFormatSettings = Input {
+							Value = 1,
+						},
+						Center = Input {
+							Value = { 0.5, 0.424537037037037 },
+						},
+						StyledText = Input {
+							Value = "오프라인 신청은 이제 없어요",
+						},
+						Font = Input {
+							Value = "Cafe24 Ssurround",
+						},
+						Style = Input {
+							Value = "Bold",
+						},
+						Size = Input {
+							Value = 0.05,
+						},
+						Red1 = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftRed",
+						},
+						Green1 = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftGreen",
+						},
+						Blue1 = Input {
+							Value = 0,
+							Expression = "th_color.TopLeftBlue",
+						},
+						Alpha1 = Input {
+							Value = 1,
+						},
+						HorizontalLeftCenterRight = Input {
+							Value = 0,
+						},
+						VerticalTopCenterBottom = Input {
+							Value = 0,
+						},
+						Enabled3 = Input {
+							Value = 0,
+						},
+						Enabled4 = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_fit1 = Transform {
+					CtrlWZoom = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "th_line1",
+							Source = "Output",
+						},
+						Pivot = Input {
+							Value = { 0.5, 0.531481481481481 },
+						},
+						Size = Input {
+							Value = 1,
+							Expression = "min(1,0.7385416666666663/(((th_line1.Output[time].DataWindow[3]-th_line1.Output[time].DataWindow[1])*1920/th_line1.Output[time].Width)/1920))",
+						},
+					},
+				},
+				th_m109 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m108",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_fit1",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_fit2 = Transform {
+					CtrlWZoom = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "th_line2",
+							Source = "Output",
+						},
+						Pivot = Input {
+							Value = { 0.5, 0.424537037037037 },
+						},
+						Size = Input {
+							Value = 1,
+							Expression = "min(1,0.7385416666666663/(((th_line2.Output[time].DataWindow[3]-th_line2.Output[time].DataWindow[1])*1920/th_line2.Output[time].Width)/1920))",
+						},
+					},
+				},
+				th_m110 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m109",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_fit2",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+					},
+				},
+				th_m2 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "th_m1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "th_m110",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input {
+							Value = 0,
+						},
+						Blend = Input {
+							Value = 1,
+							Expression = "iif(th_ctl.FadeIn<1,1,min(1,time/th_ctl.FadeIn))*iif(th_ctl.FadeOut<1,1,min(1,(comp.RenderEnd-time)/th_ctl.FadeOut))",
+						},
+					},
+				},
+				th_xf = Transform {
+					CtrlWZoom = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "th_m2",
+							Source = "Output",
+						},
+					},
+				},
+			},
+		},
+	},
+	ActiveTool = "th01_InfoCard",
+}

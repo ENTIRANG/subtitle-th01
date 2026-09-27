@@ -1,0 +1,133 @@
+{
+	Tools = ordered() {
+		th01_Watermark = MacroOperator {
+			Inputs = ordered() {
+				Input1 = InstanceInput {
+					SourceOp = "Text1",
+					Source = "StyledText",
+					Name = "글자",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "th_xf",
+					Source = "Center",
+					Name = "위치",
+					Page = "Controls",
+				},
+				Input3 = InstanceInput {
+					SourceOp = "th_xf",
+					Source = "Size",
+					Name = "크기",
+					Default = 1,
+				},
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "th_xf",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 0, 0 } },
+			Tools = ordered() {
+				Background1 = Background {
+					Inputs = {
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						TopLeftAlpha = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 550, 16.5 } },
+				},
+				Merge2 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Blend = Input { Value = 0.34, },
+						Background = Input {
+							SourceOp = "Merge1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Background2",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 220, 16.5 } },
+				},
+				Merge1 = Merge {
+					Inputs = {
+						Blend = Input { Value = 0.7, },
+						Background = Input {
+							SourceOp = "Background1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Text1",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 440, 16.5 } },
+				},
+				Rectangle1 = RectangleMask {
+					Inputs = {
+						Filter = Input { Value = FuID { "Fast Gaussian" }, },
+						MaskWidth = Input { Value = 1920, },
+						MaskHeight = Input { Value = 1080, },
+						PixelAspect = Input { Value = { 1, 1 }, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						ClippingMode = Input { Value = FuID { "None" }, },
+						Center = Input { Value = { 0.8875, 0.918518518518519 }, },
+						Width = Input { Value = 0.125, },
+						Height = Input { Value = 0.00185185185185185, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 0, 16.5 } },
+				},
+				Text1 = TextPlus {
+					CtrlWZoom = false,
+					Inputs = {
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Wrap = Input { Value = 1, },
+						Center = Input { Value = { 0.887239583333333, 0.942592592592593 }, },
+						LayoutRotation = Input { Value = 1, },
+						TransformRotation = Input { Value = 1, },
+						Softness1 = Input { Value = 1, },
+						StyledText = Input { Value = "남성중학교 방송부", },
+						Font = Input { Value = "Cafe24 Ssurround air", },
+						Style = Input { Value = "Light", },
+						Size = Input { Value = 0.020114095193576, },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalJustificationNew = Input { Value = 3, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 110, 16.5 } },
+					Version = 1
+				},
+				Background2 = Background {
+					Inputs = {
+						EffectMask = Input {
+							SourceOp = "Rectangle1",
+							Source = "Mask",
+						},
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						TopLeftRed = Input { Value = 1.0, },
+						TopLeftGreen = Input { Value = 1.0, },
+						TopLeftBlue = Input { Value = 1.0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 330, 16.5 } },
+				},
+				th_xf = Transform {
+					Inputs = {
+						Input = Input { SourceOp = "Merge2", Source = "Output", },
+					},
+				},
+			},
+		}
+	},
+	ActiveTool = "th01_Watermark"
+}
